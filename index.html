@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery de Alimentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#" class="active">Página Inicial</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pedido">
+      <h1>Faça seu pedido conosco!</h1>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required autocomplete="postal-code">
+        </div>
+        <div class="form-group">
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div class="form-group">
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" required>
+        </div>
+        <div class="form-group">
+          <label for="comida">Opção de comida:</label>
+          <select id="comida" name="comida" required>
+            <option value="">Selecione</option>
+            <option value="lanche">Lanche</option>
+            <option value="comida_caseira">Comida Caseira</option>
+            <option value="marmita_congelada">Marmita Congelada</option>
+            <option value="comida_oriental">Comida Oriental</option>
+            <option value="comida_mexicana">Comida Mexicana</option>
+            <option value="pizza">Pizza</option>
+            <option value="comida_italiana">Comida Italiana</option>
+            <option value="padaria">Padaria</option>
+          </select>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
