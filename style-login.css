@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu ul {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    display: block;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: orange;
+  }
+  
+  .menu a.active {
+    color: orange;
+  }
+  
+  main {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  .login {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000;
+  }
+  
+  .form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-buttons button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .form-buttons button:hover {
+    background-color: #e04c00;
+  }
+  
+  .cadastro {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .cadastro p {
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .cadastro a {
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .cadastro a:hover {
+    background-color: #e04c00;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    
+      .form-buttons {
+        flex-direction: column;
+      }
+    
+      .cadastro a {
+        margin-top: 10px;
+      }
+    }  
